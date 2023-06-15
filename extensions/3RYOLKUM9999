@@ -1,0 +1,21 @@
+class HelloWorld {
+  getInfo() {
+    return {
+      id: 'pinumber',
+      name: 'Pi Number',
+      blocks: [
+        {
+          opcode: 'π',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'π'
+        }
+      ]
+    };
+  }
+
+  hello() {
+    return '3,141592653589793238462643383';
+  }
+}
+
+Scratch.extensions.register(new HelloWorld());
